@@ -1,0 +1,778 @@
+html, body, span, p, form, img, a, ul, ol, li, table,tr,td,div {
+	margin:0px;
+	padding:0px;
+	border:0px;
+	outline:0px;
+	list-style-type:0px;
+	}
+
+
+html {
+    color: white;
+    font-size: 1em;
+    line-height: 1.4;
+    text-shadow: 1px 1px 1px grey;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+.wrapper {
+	min-width:300px;
+	max-width:640px;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.header-container {
+    border-bottom: 15px solid red;
+}
+
+.footer-container{
+    background-image: url(rodape.png);
+    padding: 5px 0 20px 0;
+    position: relative;
+	min-width: 300px; max-width:640px;
+}
+
+.header-container{
+    background-image: linear-gradient(#1942f0, #7988c6);
+}
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.footer-container footer {
+    color: white;
+    margin: 180px auto 0 auto;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+* {box-sizing: border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+	
+}
+
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*===================MENU ALTERNATIVO==================*/
+
+
+*{margin: 0; padding: 0; }
+
+body{
+font-family: arial, helvetica, sans-serif;
+font-size: 18px;
+  /*min-width: 300px; max-width:640px;  */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+	width: auto;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(#364eff,#9f74ff);
+    border-radius: 10px;
+    font-size: 12px;
+	width: auto;
+	font-weight: bold;
+	
+}
+
+
+nav a:hover {
+    background-image:linear-gradient(#6173f8,#d074ff);
+}
+
+nav ul li {
+        display: inline-block;
+        margin-right: 5px;
+	  
+    }
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    /*width: 1px;*/
+	min-width: 300px; 
+	max-width: 640px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+	/*min-width: 300px; max-width:640px;*/
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+.medias {
+    float: right;
+   width: 40px; 
+	 /*min-width: 300px; 
+	max-width:640px;*/
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.3s;
+}
+
+.midiasocial{
+	bottom:60px;
+	margin-top:0px;
+	position:relative;
+}
+
+.medias:hover {
+    -webkit-filter: contrast(200%);
+    filter: contrast(200%);
+}
+
+.semespaco {
+    display: inline;
+}
+
+#map {
+    height: 400px;
+    /*width: 100%;*/
+	min-width: 300px; 
+	max-width:640px;
+}
+
+#div-mapas {
+    clear: both;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.mapa {
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: 5px;
+    cursor: pointer;
+	width: 380px;
+}
+
+.mapa:hover {
+    opacity: 0.7;
+}
+
+summary {
+    background-image: linear-gradient(yellow,white);
+    display: inline;
+    padding: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+.planos:hover {
+    opacity: 0.9;
+    filter: contrast(200%);
+    -webkit-filter: contrast(200%);
+}
+
+.planos {
+    border-radius: 30px;
+    margin: 5px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    transition: 0.3s;
+    /*width: 180px;*/
+	min-width: 300px; 
+	max-width:640px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+   /* width: 100%; */
+	min-width: 300px; 
+	max-width:640px;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    /*width: 80%;
+     max-width: 680px;*/
+	min-width: 300px; 
+	max-width:640px;	 
+    text-align: center;
+    color: #ccc;
+}
+
+.modal-content {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6;
+}
+
+@-webkit-keyframes zoom {
+    from { -webkit-transform: scale(0)}
+    to { -webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+    from { transform: scale(0)}
+    to { transform: scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.artigo {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.artigo h2 {
+    margin-top: 50px;
+}
+
+.artigo h1 {
+    margin: 0;
+	font-size: 16pt;
+}
+.artigo p {
+    margin: 0;
+	font-size: 12pt;
+}
+
+div.tab {
+    overflow: hidden;
+    background-color: #1fbfea;
+    margin-top: 50px;
+}
+
+div.tab button {
+    color: black;
+    background-color: inherit;
+    border: none;
+    /* outline: none; */
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 24px;
+}
+
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+div.tab button.active {
+    background-color: #f00c;
+}
+
+.tabcontent {
+    display: none;
+    border-top: none;
+    text-align: center;
+    padding-bottom: inherit;
+    background-image: linear-gradient(#00a5ff80,#800000cc);
+}
+
+#FibraResidencial {
+    display: block;
+}
+
+.vantagens {
+    text-align: center;
+    margin-top: 60px;
+	text-shadow:#000 -1px -1px 1px;
+	min-width: 300px; max-width:640px;
+	
+}
+
+.vantagens img {
+    margin: 10px;
+    border-radius: 5px;
+	
+}
+
+.vantagens h2 {
+	font-size: 16pt;
+}
+
+.item-vantagem {
+    width: 40px;
+    display: inline-table;
+}
+
+.item-vantagem img{
+    width: 140px;
+    display: inline-table;
+}
+
+.tipo-planos {
+    width: 5px;
+    display: inline-table;
+    border: 1px solid brown;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 8px;
+    height: 20%;
+	text-shadow:#000 -1px -1px 1px;
+}
+
+.tipo-planos img {
+    width: 90%; 
+}
+
+.estilo-planos img {
+    width: 40%; 
+}
+
+
+.estilo-planos {
+    display: inline-table;
+    border-radius: 10px;
+    padding: 5px 2px;
+    margin: 2px;
+    background-color: #a52a2a4d;
+	width:200px;
+}
+
+.estilo-planos strong {
+    font-size: 18px;
+    color: yellow;
+}
+
+.estilo-planos b {
+    display: inherit;
+    font-size: 28px;
+    padding: 10px 0;
+}
+
+.tipo-planos strong {
+    font-size: 15px;
+}
+
+.tipo-planos h3 {
+    font-size: 15px;
+}
+
+.tipo-planos p {
+    font-size: 12px;
+}
+
+.imagem:hover {
+    filter: contrast(200%);
+    -webkit-filter: contrast(200%);
+}
+
+.bordas {
+	border-radius: 10px;
+	/* Declaração para aparecer no Firefox */
+	-moz-border-radius: 10px;
+	/* Para exibir nos outros navegadores como Chrome, safari, opera*/
+	-webkit-border-radius: 90px;
+        transition: 0.3s;
+	}
+	
+.bordas:hover {
+	filter: contrast(200%);
+        -webkit-filter: contrast(200%);
+	}
+	
+.botao {
+        text-decoration: none;
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 2em;
+        font-size: 9px;
+        color: purple;
+        cursor: pointer;
+        display: inherit;
+		
+   }
+   
+.botao:hover {
+        text-decoration: none;
+        background-color: #F5F5F5;
+		color: red;
+        
+   }
+   
+.direitos{
+		font-size: 10px;  
+		text-align: center;
+		text-shadow:#000 -1px -1px 1px;
+		position: relative;
+		min-width: 300px; max-width:640px;
+}
+   
+.comentarios{
+	margin-top:20px;
+    font-size: 13px; 
+    text-align: right;
+    font-weight: bold;
+    text-shadow:#000 -1px -1px 1px;
+}
+
+.contato{
+	float: right;
+}
+
+.endereco {
+    float: left;
+}
+
+.estilo_input{
+        padding: 8px;
+        border-radius: 2em;
+	background-color:#FFFFFF;
+	color: #000000;
+	font-weight: bold;
+        margin-top: 5px;
+}
+
+.estilo_input2{
+
+	background-color:#FFFFFF;
+	color: #000000;
+	font-family: Arial;
+	font-size: 10pt;
+	vertical-align: middle;
+	left: 0px;
+}
+
+#texto-fibra {
+    background-image: linear-gradient(#0006,#8000804d);
+	text-shadow:#000 -1px -1px 1px;
+}
+
+#texto-fibra h2 {
+    font-size: 16pt;
+}
+
+#texto-fibra p {
+    font-size: 12pt;
+}
+
+
+.box {
+
+ width: 50%;
+ float: left;
+ height: 120px;/*Altura da linha*/
+ text-shadow:#000 -1px -1px 1px;
+
+}
+
+.box h1{
+	font-size: 30pt;
+	width: 100%;
+	text-align:center;
+}
+
+.box h3{
+	font-size: 12pt;
+	width: 100%;
+	text-align:center;
+	float: left;
+}
+
+.linha-vertical {
+ border-left: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+ box-sizing: border-box;
+ text-shadow:#000 -1px -1px 1px;
+}
+
+.sombratxt{
+	text-shadow:#000 -1px -1px 1px;
+}
+
+.sombratxt p{
+	font-size:14px;
+}
+
+.sombratxt iframe{
+	width: 100%;
+	height:400px;
+}
+
+#letravermelha
+{
+	color:#FF0000;
+}
+
+
+#assine-ja {
+    color: black;
+    font-size: 20px;
+    position: relative;
+	width: 100%;
+	text-align:center;
+}
+
+.testevelocidade {
+	min-width: 300px; max-width:640px;  
+	text-shadow:#000 -1px -1px 1px;
+}
+
+.testevelocidade img {
+	width:23%;
+	
+}
