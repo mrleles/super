@@ -1,4 +1,5 @@
-<!doctype html>
+<?php
+echo '<!doctype html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -49,7 +50,7 @@
             }
             </style>
     </head>
-   <body style="background: url('img/redback.webp') fixed;">
+   <body style="background: url(\'img/redback.webp\') fixed;">
 
 
         <div id="voltar-topo"><a href="#"><img src="img/topo.webp" alt="" /></a></div>
@@ -80,19 +81,19 @@
                 <h1>Tests</h1>
 
                 <div class="tab">
-                  <button class="tablinks" onclick="openCity(event, 'nbr')">NBR</button>
-                  <button class="tablinks" onclick="openCity(event, 'cancao')">Canção Nova</button>
-                  <button class="tablinks" onclick="openCity(event, 'rit')">RIT</button>
-                  <button class="tablinks" onclick="openCity(event, 'minas')">Rede Minas</button>
-                  <button class="tablinks" onclick="openCity(event, 'redevida')">Rede Vida</button>
-                  <button class="tablinks" onclick="openCity(event, 'gazeta')">TV Gazeta</button>
-                  <button class="tablinks" onclick="openCity(event, 'camara')">TV Câmara</button>
-                  <button class="tablinks" onclick="openCity(event, 'tvebahia')">TVE Bahia</button>
-                  <button class="tablinks" onclick="openCity(event, 'aparecida')">TV Aparecida</button>
-                  <button class="tablinks" onclick="openCity(event, 'sesc')">SESC TV</button>
-                  <button class="tablinks" onclick="openCity(event, 'acritica')">TV A Crítica</button>
-                  <button class="tablinks" onclick="openCity(event, 'ngt')">REDE NGT</button>
-                  <button class="tablinks" onclick="openCity(event, 'familia')">Rede Família</button>
+                  <button class="tablinks" onclick="openCity(event, \'nbr\')">NBR</button>
+                  <button class="tablinks" onclick="openCity(event, \'cancao\')">Canção Nova</button>
+                  <button class="tablinks" onclick="openCity(event, \'rit\')">RIT</button>
+                  <button class="tablinks" onclick="openCity(event, \'minas\')">Rede Minas</button>
+                  <button class="tablinks" onclick="openCity(event, \'redevida\')">Rede Vida</button>
+                  <button class="tablinks" onclick="openCity(event, \'gazeta\')">TV Gazeta</button>
+                  <button class="tablinks" onclick="openCity(event, \'camara\')">TV Câmara</button>
+                  <button class="tablinks" onclick="openCity(event, \'tvebahia\')">TVE Bahia</button>
+                  <button class="tablinks" onclick="openCity(event, \'aparecida\')">TV Aparecida</button>
+                  <button class="tablinks" onclick="openCity(event, \'sesc\')">SESC TV</button>
+                  <button class="tablinks" onclick="openCity(event, \'acritica\')">TV A Crítica</button>
+                  <button class="tablinks" onclick="openCity(event, \'ngt\')">REDE NGT</button>
+                  <button class="tablinks" onclick="openCity(event, \'familia\')">Rede Família</button>
                 </div>
 
                 <div id="nbr" class="tabcontent">
@@ -175,31 +176,8 @@
                 </script>
 
             </div> <!-- #main -->
-        </div> <!-- #main-container -->
+        </div> <!-- #main-container -->';
 
+include "footer.php";
 
-
-
-        <div class="footer-container">
-            <footer class="wrapper">
-
-		<img src="img/logo.webp" alt="logo"  class="logosp">
-                <div id="assine-ja">
-                    Assine já!<br>(27) 4042-1750
-                </div>
-			<div class="midiasocial">
-		<a href="http://fb.com/supernetofficial" target="_blank"><img src="img/face.webp" alt="Facebook" class="medias"></a>
-		<a href="http://instagram.com/supernetes" target="_blank"><img src="img/insta.webp" alt="Facebook" class="medias"></a>
-		<a href="https://api.whatsapp.com/send?phone=5527999941750&text=Bom%20Dia!" target="_blank"><img src="img/whats.webp" alt="Whatsapp" class="medias"></a>
-				</div>
-
-                <div class="direitos">2018 - Todos os Direitos Reservados </div>
-            </footer>
-
-        </div>
-
-        <script src="js/main.js"></script>
-
-
-    </body>
-</html>
+?>
