@@ -92,7 +92,7 @@ echo '<div class="main wrapper clearfix" id="texto-sobre">
                             }
                             var marker = new goggle.maps.Marker({position: uluru, map: map});
                         </script>
-                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH714AIj7H74DmFYs2ZO7tVFv5wswuDLk&callback=myMap"></script>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=key&callback=myMap"></script>
             </div> <!-- #main -->';
 
 include "footer.php";
